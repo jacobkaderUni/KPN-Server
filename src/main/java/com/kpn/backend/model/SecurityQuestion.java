@@ -1,40 +1,40 @@
-//package com.kpn.backend.model;
-//
-//import jakarta.persistence.*;
-//
-//@Entity
-//@Table(name = "Security Question")
-//public class SecurityQuestion {
-//
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private String question_id;
-//
-//    @Column(name = "question_text")
-//    private String question_text;
-//
-//    public SecurityQuestion() {
-//
-//    }
-//
-//    public SecurityQuestion(String question_id, String question_text){
-//        this.question_id = question_id;
-//        this.question_text = question_text;
-//    }
-//
-//    public String getQuestion_id() {
-//        return question_id;
-//    }
-//
-//    public void setQuestion_id(String question_id) {
-//        this.question_id = question_id;
-//    }
-//
-//    public String getQuestion_text() {
-//        return question_text;
-//    }
-//
-//    public void setQuestion_text(String question_text) {
-//        this.question_text = question_text;
-//    }
-//}
+package com.kpn.backend.model;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "securityQuestions")
+public class SecurityQuestion {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String questionId;
+
+    @Column(name = "questionText")
+    private String questionText;
+
+    public SecurityQuestion() {
+
+    }
+
+    public SecurityQuestion(String questionId, String questionText){
+        this.questionId = questionId;
+        this.questionText = questionText;
+    }
+
+    public String getQuestionId() {
+        return questionId;
+    }
+
+    public void setQuestionId(String questionId) {
+        this.questionId = questionId;
+    }
+
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public void setquestionText(String questionText) {
+        this.questionText = questionText;
+    }
+}
